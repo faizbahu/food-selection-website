@@ -15,6 +15,7 @@ module.exports = {
         gray_secondary: "#DEDFF7",
         green: "#058346",
         black: "#3d3d3d",
+        gray_tertiary: "#5d7285",
       },
     },
   },
