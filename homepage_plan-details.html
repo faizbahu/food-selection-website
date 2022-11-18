@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
+         rel="stylesheet" />
+      <link rel="stylesheet" href="style.css" />
+      <link href="./css/tailwind.css" rel="stylesheet" />
+      <title>Simple Ai Food</title>
+   </head>
+   <body>
+      <div class="flex">
+      <nav class="">
+         <div class="flex flex-col justify-between h-screen mx-2 sticky top-0">
+            <div class="flex flex-col items-center mt-16 w-[86px]">
+               <img class="" src="./images/Logo.png" alt="" />
+               <img class="mt-5" src="./images/Nav Item.png" alt="" />
+            </div>
+            <div class="flex flex-col items-center mb-16">
+               <img src="./images/settings.png" alt="" />
+            </div>
+         </div>
+      </nav>
+      <section class="flex-1 mt-16">
+      <header>
+         <div class="flex justify-between">
+            <div class="flex flex-1">
+               <img class="ml-8" src="./images/avatar_4.png" alt="" />
+               <div class="ml-5 flex-1">
+                  <h3 class="text-2xl font-base text-gray_tertiary">FirstName</h3>
+                  <h1 class="font-bold text-4xl text-black">LastName</h1>
+               </div>
+            </div>
+            <div class="flex flex-wrap items-baseline gap-x-2.5 gap-y-2.5 flex-1">
+               <p class="text-lg text-dark_green px-3 bg-[#BFFFC6] rounded-[15px] py-0.5 w-44 items-center flex">
+                  Age
+               </p>
+               <p class="text-lg text-dark_green px-3 bg-[#BFFFC6] rounded-[15px] py-0.5 w-44 items-center flex">
+                  Diet
+               </p>
+               <p class="text-lg text-dark_green px-3 bg-[#BFFFC6] rounded-[15px] py-0.5 w-44 items-center flex">
+                  Goal
+               </p>
+               <p class="text-lg text-dark_green px-3 bg-[#BFFFC6] rounded-[15px] py-0.5 w-44 items-center flex">
+                  Activity Level
+               </p>
+               <p class="text-lg text-purple px-3 bg-[#F9CBCB] rounded-[15px] py-0.5 w-44 items-center flex">
+                  Condition
+               </p>
+               <p class="text-lg text-purple px-3 bg-[#F9CBCB] rounded-[15px] py-0.5 w-44 items-center flex">
+                  Restriction 1
+               </p>
+               <p class="text-lg text-purple px-3 bg-[#F9CBCB] rounded-[15px] py-0.5 w-44 items-center flex">
+                  Restriction 2
+               </p>
+            </div>
+         </div>
+      </header>
+      <section>
+         <section>
+            <div class="flex mt-12">
+               <a href="./homepage_planner.html">
+               <button
+                  class="hover:rounded-t-3xl w-[190px] h-[64px] text-xl text-bold_text hover:font-bold hover:text-2xl hover:text-black hover:bg-vibrant_gray">
+               Planner
+               </button>
+               </a>
+               <a href="./homepage_client-details.html">
+               <button
+                  class="hover:rounded-t-3xl w-[190px] h-[64px] text-xl text-bold_text hover:font-bold hover:text-2xl hover:text-black hover:bg-vibrant_gray">
+               Client Details
+               </button>
+               </a>
+               <a href="./homepage_plan-details.html">
+               <button class="rounded-t-3xl w-[190px] h-[64px] font-bold text-2xl text-black bg-vibrant_gray">
+               Plan Details
+               </button>
+               </a>
+            </div>
+            <div class="bg-vibrant_gray flex">
+               <form style="flex: 2;"  action="" post="">
+                  <div class="bg-white mt-10 ml-11 rounded-t-3xl">
+                     <div class="pt-14 pl-14 pr-16  flex flex-col flex-wrap ">
+                        <h1 class="font-bold text-2xl text-black">Plan Repeats</h1>
+                        <div class="boxed flex gap-x-2.5 mt-5">
+                           <input type="radio" id="daily" name="skills" value="daily">
+                           <label
+                              class="border font-medium border-[#9496B8] text-lg text-gray_primary px-3 bg-white rounded-[15px] py-0.5 w-44 items-center flex"
+                              for="daily">Daily</label>
+                           <input type="radio" id="weekly" name="skills" value="weekly">
+                           <label
+                              class="border font-medium border-[#9496B8] text-lg text-gray_primary px-3 bg-white rounded-[15px] py-0.5 w-44 items-center flex"
+                              for="weekly">Weekly</label>
+                           <input type="radio" id="monthly" name="skills" value="monthly">
+                           <label
+                              class="border font-medium border-[#9496B8] text-lg text-gray_primary px-3 bg-white rounded-[15px] py-0.5 w-44 items-center flex"
+                              for="monthly">Monthly</label>
+                        </div>
+                        <div class="mt-14 flex items-center">
+                           <h1 class="font-bold text-2xl text-black mr-16">Plan Starts</h1>
+                           <input class="w-5 h-5" type="checkbox">
+                           <label class="ml-2 text-base font-medium text-gray_primary">No specific
+                           start</label>
+                        </div>
+                        <div style="width: 320px;
+                           height: 49px;box-shadow: 0px 0px 0px 4px rgba(108, 111, 147, 0.1);"
+                           class="relative mt-5 py-2.5 px-5 flex border border-gray_primary w-fit rounded-[30px]">
+                           <input class="outline-none text-lg font-normal text-gray_dark" type="text"
+                              placeholder="Pick a date" onfocus="(this.type='date')" onblur="(this.type='text')">
+                           <span class="open-button">
+                           <button type="button"><img src="./images/date-icon.png" alt=""></button>
+                           </span>
+                        </div>
+                        <div class="mt-14 flex items-center">
+                           <h1 class="font-bold text-2xl text-black mr-20">Plan Ends</h1>
+                           <input class="w-5 h-5" type="checkbox">
+                           <label class="ml-2 text-base font-medium text-gray_primary">No specific
+                           end</label>
+                        </div>
+                        <div style="width: 320px;
+                           height: 49px;box-shadow: 0px 0px 0px 4px rgba(108, 111, 147, 0.1);"
+                           class="relative mt-5 py-2.5 px-5 flex border border-gray_primary w-fit rounded-[30px]">
+                           <input class="outline-none text-lg font-normal text-gray_dark" type="text"
+                              placeholder="Pick a date" onfocus="(this.type='date')" onblur="(this.type='text')">
+                           <span class="open-button">
+                           <button type="button"><img src="./images/date-icon.png" alt=""></button>
+                           </span>
+                        </div>
+                     </div>
+                     <button type="submit"
+                        class="mb-60 mt-24 ml-14 rounded py-[9px] px-[87px] text-green text-lg font-medium leading-6 border border-green"
+                        >
+                     Save Details
+                     </button>
+                  </div>
+               </form>
+               <div class="flex justify-between flex-1">
+                  <div class="flex-1">
+                     <div class=" mr-10 bg-white mt-10 rounded-3xl px-7 py-7 ml-5 h-fit">
+                        <h1 class="pb-4 text-xl font-normal text-bold_text border-b border-[#BFBFBF]">
+                           Daily Intake
+                        </h1>
+                        <div class="mt-5 flex justify-between">
+                           <h1 class="font-normal text-xl text-bold_text">Calories</h1>
+                           <h2 class="flex items-center font-bold text-xl text-bold_text">2000
+                              Kcal <span><img class="ml-3" src="./images/vector3.png" alt=""></span>
+                           </h2>
+                        </div>
+                        <div class="mt-5 flex justify-between">
+                           <h1 class="font-normal text-xl text-bold_text">Protein</h1>
+                           <h2 class="flex items-center font-bold text-xl text-bold_text">20
+                              g<span><img class="ml-3" src="./images/vector3.png" alt=""></span>
+                           </h2>
+                        </div>
+                        <div class="mt-5 flex justify-between">
+                           <h1 class="font-normal text-xl text-bold_text">Fat</h1>
+                           <h2 class="flex items-center font-bold text-xl text-bold_text">22
+                              g<span><img class="ml-3" src="./images/vector3.png" alt=""></span>
+                           </h2>
+                        </div>
+                        <div class="mt-5 flex justify-between">
+                           <h1 class="font-normal text-xl text-bold_text">Carbs</h1>
+                           <h2 class="flex items-center font-bold text-xl text-bold_text">35
+                              g<span><img class="ml-3" src="./images/vector3.png" alt=""></span>
+                           </h2>
+                        </div>
+                        <div style="box-shadow: 0px 0px 0px 4px rgba(108, 111, 147, 0.1);"
+                           class="cursor-pointer mt-8 border border-gray_primary flex py-3 px-4 mb-10  rounded-[30px]  items-center">
+                           <img src="./images/plus.png" alt="">
+                           <label class="cursor-pointer text-base font-normal pl-4 text-gray_dark">Add
+                           Crutial Macros</label>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+      </section>
+   </body>
+   <style>
+      ::-webkit-calendar-picker-indicator{
+      margin-left: 105px;
+      }
+      .sd {
+      padding: 5px 10px;
+      height: 30px;
+      width: 150px;
+      }
+      .open-button {
+      position: absolute;
+      right: 19px;
+      width: 25px;
+      height: 25px;
+      background: #fff;
+      pointer-events: none;
+      }
+      .open-button button {
+      border: none;
+      background: transparent;
+      }
+      .boxed input[type="radio"] {
+      display: none;
+      }
+      .boxed input[type="radio"]:checked+label {
+      border: solid 1px #058346;
+      background: #BFFFC6;
+      color: #3f7545;
+      }
+   </style>
+</html>
