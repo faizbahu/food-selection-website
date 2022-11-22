@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link href="./css/tailwind.css" rel="stylesheet" />
+    <title>Simple Ai Food</title>
+  </head>
+  <body>
+    <div class="flex">
+      <nav class="">
+        <div class="flex flex-col justify-between h-screen mx-2 sticky top-0">
+          <div class="flex flex-col items-center mt-16 w-[86px]">
+            <a href="./homepage.html"
+              ><img class="" src="./images/Logo.png" alt=""
+            /></a>
+            <a href="./login.html"
+              ><img class="mt-5" src="./images/Nav Item.png" alt=""
+            /></a>
+          </div>
+          <div class="flex flex-col items-center mb-16">
+            <img src="./images/settings.png" alt="" />
+          </div>
+        </div>
+      </nav>
+      <section class="flex-1 mt-16">
+        <header>
+          <div class="flex justify-between">
+            <div class="flex flex-1">
+              <img class="ml-8" src="./images/avatar_4.png" alt="" />
+              <div class="ml-5 flex-1">
+                <h3 class="text-2xl font-base text-gray_tertiary">FirstName</h3>
+                <h1 class="font-bold text-4xl text-black">LastName</h1>
+              </div>
+            </div>
+            <div
+              class="flex flex-wrap items-baseline gap-x-2.5 gap-y-2.5 flex-1"
+            >
+              <p
+                class="text-lg text-dark_green px-3 bg-primary_green rounded-2xl py-0.5 w-44 items-center flex"
+              >
+                Age
+              </p>
+              <p
+                class="text-lg text-dark_green px-3 bg-primary_green rounded-2xl py-0.5 w-44 items-center flex"
+              >
+                Diet
+              </p>
+              <p
+                class="text-lg text-dark_green px-3 bg-primary_green rounded-2xl py-0.5 w-44 items-center flex"
+              >
+                Goal
+              </p>
+              <p
+                class="text-lg text-dark_green px-3 bg-primary_green rounded-2xl py-0.5 w-44 items-center flex"
+              >
+                Activity Level
+              </p>
+              <p
+                class="text-lg text-purple px-3 bg-primary_red rounded-2xl py-0.5 w-44 items-center flex"
+              >
+                Condition
+              </p>
+              <p
+                class="text-lg text-purple px-3 bg-primary_red rounded-2xl py-0.5 w-44 items-center flex"
+              >
+                Restriction 1
+              </p>
+              <p
+                class="text-lg text-purple px-3 bg-primary_red rounded-2xl py-0.5 w-44 items-center flex"
+              >
+                Restriction 2
+              </p>
+            </div>
+          </div>
+        </header>
+        <section>
+          <div class="flex mt-12">
+            <a href="./homepage_planner.html">
+              <button
+                class="rounded-t-3xl w-[190px] h-[64px] font-bold text-2xl text-black bg-vibrant_gray"
+              >
+                Planner
+              </button>
+            </a>
+            <a href="./homepage_client-details.html">
+              <button
+                class="hover:rounded-t-3xl w-[190px] h-[64px] text-xl text-bold_text hover:font-bold hover:text-2xl hover:text-black hover:bg-vibrant_gray"
+              >
+                Client Details
+              </button>
+            </a>
+            <a href="./homepage_plan-details.html">
+              <button
+                class="hover:rounded-t-3xl w-[190px] h-[64px] text-xl text-bold_text hover:font-bold hover:text-2xl hover:text-black hover:bg-vibrant_gray"
+              >
+                Plan Details
+              </button>
+            </a>
+          </div>
+          <div class="bg-vibrant_gray flex">
+            <div
+              style="flex: 3"
+              class="bg-white mt-10 ml-11 rounded-t-3xl flex-3"
+            >
+              <div class="mt-10">
+                <div class="text-center flex pl-14">
+                  <form
+                    style="box-shadow: 0px 0px 0px 4px rgba(108, 111, 147, 0.1)"
+                    class="flex border border-[#b3b5cc] px-5 rounded-[50px]"
+                    action=""
+                  >
+                    <input
+                      class="w-[396px] h-12 outline-none"
+                      type="text"
+                      placeholder="Filter"
+                    />
+                    <button><img src="./images/cancel.png" alt="" /></button>
+                  </form>
+                </div>
+              </div>
+              <div class="flex mt-10 pl-14 pr-16 gap-x-10">
+                <div class="boxed flex gap-x-2.5 gap-y-3.5 mt-5 flex-wrap">
+                  <input
+                    type="radio"
+                    id="macros"
+                    name="skills"
+                    value="macros"
+                  />
+
+                  <label
+                    class="border font-medium border-gray_border text-lg text-gray_primary px-3 bg-white rounded-2xl py-0.5 w-44 items-center flex"
+                    for="macros"
+                    ><a href="./homepage_planner_filters_by_macros.html"
+                      >By Macros
+                    </a></label
+                  >
+
+                  <input
+                    type="radio"
+                    id="ingredients"
+                    name="skills"
+                    value="ingredients"
+                  />
+                  <label
+                    class="border font-medium border-gray_border text-lg text-gray_primary px-3 bg-white rounded-2xl py-0.5 w-44 items-center flex"
+                    for="ingredients"
+                    >By Ingredients</label
+                  >
+                  <input type="radio" id="diet" name="skills" value="diet" />
+                  <label
+                    class="border font-medium border-gray_border text-lg text-gray_primary px-3 bg-white rounded-2xl py-0.5 w-44 items-center flex"
+                    for="diet"
+                    >By Diet</label
+                  >
+                  <input type="radio" id="cook" name="skills" value="cook" />
+                  <label
+                    class="border font-medium border-gray_border text-lg text-gray_primary px-3 bg-white rounded-2xl py-0.5 w-44 items-center flex"
+                    for="cook"
+                    >By Cook Time</label
+                  >
+                  <input type="radio" id="price" name="skills" value="price" />
+                  <label
+                    class="border font-medium border-gray_border text-lg text-gray_primary px-3 bg-white rounded-2xl py-0.5 w-44 items-center flex"
+                    for="price"
+                    >By Price</label
+                  >
+                  <input type="radio" id="type" name="skills" value="type" />
+                  <label
+                    class="border font-medium border-gray_border text-lg text-gray_primary px-3 bg-white rounded-2xl py-0.5 w-44 items-center flex"
+                    for="type"
+                    >By Type</label
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="flex flex-col justify-between flex-1">
+              <div class="flex flex-col">
+                <div
+                  class="mr-10 bg-white mt-10 rounded-3xl px-7 py-7 ml-5 h-fit flex"
+                >
+                  <table class="table-auto text-left flex-1">
+                    <thead>
+                      <tr class="border-b border-gray_light">
+                        <th class="font-normal text-sm text-bold_text pb-2">
+                          Today’s Intake
+                        </th>
+                        <th class="font-normal text-sm text-bold_text pb-2">
+                          Left
+                        </th>
+                        <th
+                          class="font-normal text-sm text-bold_text pb-2 pl-4"
+                        >
+                          Filled
+                        </th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td class="pt-4 text-sm font-bold text-bold_text">
+                          2000 Kcal<br />
+                          <p class="text-xs font-normal">Calories</p>
+                        </td>
+                        <td class="text-sm font-bold text-red">1750</td>
+                        <td class="text-sm font-bold text-bold_text pl-4">
+                          250
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="pt-4 text-sm font-bold text-bold_text">
+                          20 g<br />
+                          <p class="text-xs font-normal">Protein</p>
+                        </td>
+                        <td class="text-sm font-bold text-red">16</td>
+                        <td class="text-sm font-bold text-bold_text pl-4">4</td>
+                      </tr>
+                      <tr>
+                        <td class="pt-4 text-sm font-bold text-bold_text">
+                          22 g<br />
+                          <p class="text-xs font-normal">Fat</p>
+                        </td>
+                        <td class="text-sm font-bold text-red">20</td>
+                        <td class="text-sm font-bold text-bold_text pl-4">2</td>
+                      </tr>
+                      <tr>
+                        <td class="pt-4 text-sm font-bold text-bold_text">
+                          35 g<br />
+                          <p class="text-xs font-normal">Carbs</p>
+                        </td>
+                        <td class="text-sm font-bold text-red">20</td>
+                        <td class="text-sm font-bold text-bold_text pl-4">
+                          15
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <div class="ml-12 mt-8">
+                  <h1 class="text-sm font-normal text-bold_text underline">
+                    Edit Plan details
+                  </h1>
+                </div>
+              </div>
+              <div class="mr-10 ml-5 mb-12 flex flex-col-reverse mt-64">
+                <button
+                  class="rounded py-[9px] text-green text-lg font-medium leading-6 border border-green"
+                >
+                  Update FirstName
+                </button>
+              </div>
+            </div>
+          </div>
+        </section>
+      </section>
+    </div>
+  </body>
+  <style>
+    .boxed input[type="radio"] {
+      display: none;
+    }
+    .boxed input[type="radio"]:checked + label {
+      border: solid 1px #058346;
+      background: #bfffc6;
+      color: #3f7545;
+    }
+  </style>
+</html>

@@ -36,25 +36,25 @@
                </div>
             </div>
             <div class="flex flex-wrap items-baseline gap-x-2.5 gap-y-2.5 flex-1">
-               <p class="text-lg text-dark_green px-3 bg-[#BFFFC6] rounded-[15px] py-0.5 w-44 items-center flex">
+               <p class="text-lg text-dark_green px-3 bg-primary_green rounded-[15px] py-0.5 w-44 items-center flex">
                   Age
                </p>
-               <p class="text-lg text-dark_green px-3 bg-[#BFFFC6] rounded-[15px] py-0.5 w-44 items-center flex">
+               <p class="text-lg text-dark_green px-3 bg-primary_green rounded-[15px] py-0.5 w-44 items-center flex">
                   Diet
                </p>
-               <p class="text-lg text-dark_green px-3 bg-[#BFFFC6] rounded-[15px] py-0.5 w-44 items-center flex">
+               <p class="text-lg text-dark_green px-3 bg-primary_green rounded-[15px] py-0.5 w-44 items-center flex">
                   Goal
                </p>
-               <p class="text-lg text-dark_green px-3 bg-[#BFFFC6] rounded-[15px] py-0.5 w-44 items-center flex">
+               <p class="text-lg text-dark_green px-3 bg-primary_green rounded-[15px] py-0.5 w-44 items-center flex">
                   Activity Level
                </p>
-               <p class="text-lg text-purple px-3 bg-[#F9CBCB] rounded-[15px] py-0.5 w-44 items-center flex">
+               <p class="text-lg text-purple px-3 bg-primary_red rounded-[15px] py-0.5 w-44 items-center flex">
                   Condition
                </p>
-               <p class="text-lg text-purple px-3 bg-[#F9CBCB] rounded-[15px] py-0.5 w-44 items-center flex">
+               <p class="text-lg text-purple px-3 bg-primary_red rounded-[15px] py-0.5 w-44 items-center flex">
                   Restriction 1
                </p>
-               <p class="text-lg text-purple px-3 bg-[#F9CBCB] rounded-[15px] py-0.5 w-44 items-center flex">
+               <p class="text-lg text-purple px-3 bg-primary_red rounded-[15px] py-0.5 w-44 items-center flex">
                   Restriction 2
                </p>
             </div>
@@ -89,15 +89,15 @@
                         <div class="boxed flex gap-x-2.5 mt-5">
                            <input type="radio" id="daily" name="skills" value="daily">
                            <label
-                              class="border font-medium border-[#9496B8] text-lg text-gray_primary px-3 bg-white rounded-[15px] py-0.5 w-44 items-center flex"
+                              class="border font-medium border-gray_border text-lg text-gray_primary px-3 bg-white rounded-[15px] py-0.5 w-44 items-center flex"
                               for="daily">Daily</label>
                            <input type="radio" id="weekly" name="skills" value="weekly">
                            <label
-                              class="border font-medium border-[#9496B8] text-lg text-gray_primary px-3 bg-white rounded-[15px] py-0.5 w-44 items-center flex"
+                              class="border font-medium border-gray_border text-lg text-gray_primary px-3 bg-white rounded-[15px] py-0.5 w-44 items-center flex"
                               for="weekly">Weekly</label>
                            <input type="radio" id="monthly" name="skills" value="monthly">
                            <label
-                              class="border font-medium border-[#9496B8] text-lg text-gray_primary px-3 bg-white rounded-[15px] py-0.5 w-44 items-center flex"
+                              class="border font-medium border-gray_border text-lg text-gray_primary px-3 bg-white rounded-[15px] py-0.5 w-44 items-center flex"
                               for="monthly">Monthly</label>
                         </div>
                         <div class="mt-14 flex items-center">
@@ -106,9 +106,8 @@
                            <label class="ml-2 text-base font-medium text-gray_primary">No specific
                            start</label>
                         </div>
-                        <div style="width: 320px;
-                           height: 49px;box-shadow: 0px 0px 0px 4px rgba(108, 111, 147, 0.1);"
-                           class="relative mt-5 py-2.5 px-5 flex border border-gray_primary w-fit rounded-[30px]">
+                        <div style="box-shadow: 0px 0px 0px 4px rgba(108, 111, 147, 0.1);"
+                           class="w-80 h-12 relative mt-5 py-2.5 px-5 flex border border-gray_primary rounded-[30px]">
                            <input class="outline-none text-lg font-normal text-gray_dark" type="text"
                               placeholder="Pick a date" onfocus="(this.type='date')" onblur="(this.type='text')">
                            <span class="open-button">
@@ -121,9 +120,9 @@
                            <label class="ml-2 text-base font-medium text-gray_primary">No specific
                            end</label>
                         </div>
-                        <div style="width: 320px;
-                           height: 49px;box-shadow: 0px 0px 0px 4px rgba(108, 111, 147, 0.1);"
-                           class="relative mt-5 py-2.5 px-5 flex border border-gray_primary w-fit rounded-[30px]">
+                        <div style="
+                           box-shadow: 0px 0px 0px 4px rgba(108, 111, 147, 0.1);"
+                           class="w-80 h-12 relative mt-5 py-2.5 px-5 flex border border-gray_primary  rounded-[30px]">
                            <input class="outline-none text-lg font-normal text-gray_dark" type="text"
                               placeholder="Pick a date" onfocus="(this.type='date')" onblur="(this.type='text')">
                            <span class="open-button">
@@ -141,7 +140,7 @@
                <div class="flex justify-between flex-1">
                   <div class="flex-1">
                      <div class=" mr-10 bg-white mt-10 rounded-3xl px-7 py-7 ml-5 h-fit">
-                        <h1 class="pb-4 text-xl font-normal text-bold_text border-b border-[#BFBFBF]">
+                        <h1 class="pb-4 text-xl font-normal text-bold_text border-b border-gray_light">
                            Daily Intake
                         </h1>
                         <div class="mt-5 flex justify-between">
@@ -169,7 +168,7 @@
                            </h2>
                         </div>
                         <div style="box-shadow: 0px 0px 0px 4px rgba(108, 111, 147, 0.1);"
-                           class="cursor-pointer mt-8 border border-gray_primary flex py-3 px-4 mb-10  rounded-[30px]  items-center">
+                           class="cursor-pointer mt-8 border border-gray_primary flex py-3 px-4 mb-10 rounded-[30px] items-center">
                            <img src="./images/plus.png" alt="">
                            <label class="cursor-pointer text-base font-normal pl-4 text-gray_dark">Add
                            Crutial Macros</label>
