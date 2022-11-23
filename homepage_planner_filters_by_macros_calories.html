@@ -45,37 +45,37 @@
               class="flex flex-wrap items-baseline gap-x-2.5 gap-y-2.5 flex-1"
             >
               <p
-                class="text-lg text-dark_green px-3 bg-primary_green rounded-2xl py-0.5 w-44 items-center flex"
+                class="text-lg text-dark_green px-3 bg-primary_green rounded-[15px] py-0.5 w-44 items-center flex"
               >
                 Age
               </p>
               <p
-                class="text-lg text-dark_green px-3 bg-primary_green rounded-2xl py-0.5 w-44 items-center flex"
+                class="text-lg text-dark_green px-3 bg-primary_green rounded-[15px] py-0.5 w-44 items-center flex"
               >
                 Diet
               </p>
               <p
-                class="text-lg text-dark_green px-3 bg-primary_green rounded-2xl py-0.5 w-44 items-center flex"
+                class="text-lg text-dark_green px-3 bg-primary_green rounded-[15px] py-0.5 w-44 items-center flex"
               >
                 Goal
               </p>
               <p
-                class="text-lg text-dark_green px-3 bg-primary_green rounded-2xl py-0.5 w-44 items-center flex"
+                class="text-lg text-dark_green px-3 bg-primary_green rounded-[15px] py-0.5 w-44 items-center flex"
               >
                 Activity Level
               </p>
               <p
-                class="text-lg text-purple px-3 bg-primary_red rounded-2xl py-0.5 w-44 items-center flex"
+                class="text-lg text-purple px-3 bg-primary_red rounded-[15px] py-0.5 w-44 items-center flex"
               >
                 Condition
               </p>
               <p
-                class="text-lg text-purple px-3 bg-primary_red rounded-2xl py-0.5 w-44 items-center flex"
+                class="text-lg text-purple px-3 bg-primary_red rounded-[15px] py-0.5 w-44 items-center flex"
               >
                 Restriction 1
               </p>
               <p
-                class="text-lg text-purple px-3 bg-primary_red rounded-2xl py-0.5 w-44 items-center flex"
+                class="text-lg text-purple px-3 bg-primary_red rounded-[15px] py-0.5 w-44 items-center flex"
               >
                 Restriction 2
               </p>
@@ -127,7 +127,7 @@
                   </form>
                 </div>
               </div>
-              <div class="flex mt-10 pl-14 pr-16 gap-x-10">
+              <div class="mt-10 pl-14 pr-16 gap-x-10">
                 <div class="boxed flex gap-x-2.5 gap-y-3.5 mt-5 flex-wrap">
                   <input
                     type="radio"
@@ -135,52 +135,41 @@
                     name="skills"
                     value="macros"
                   />
-
                   <label
-                    class="border font-medium border-gray_border text-lg text-gray_primary px-3 bg-white rounded-2xl py-0.5 w-44 items-center flex"
+                    class="border font-medium border-green_border text-lg text-[#3f7545] px-3 bg-primary_green rounded-[15px] py-0.5 w-44 items-center flex"
                     for="macros"
-                    ><a href="./homepage_planner_filters_by_macros.html"
-                      >By Macros
-                    </a></label
+                    >By Macros</label
                   >
-
+                </div>
+                <div class="boxed flex gap-x-2.5 gap-y-3.5 mt-5 flex-wrap">
                   <input
                     type="radio"
-                    id="ingredients"
+                    id="calories"
                     name="skills"
-                    value="ingredients"
+                    value="calories"
                   />
                   <label
-                    class="border font-medium border-gray_border text-lg text-gray_primary px-3 bg-white rounded-2xl py-0.5 w-44 items-center flex"
-                    for="ingredients"
-                    ><a href="./homepage_planner_filters_by_ingredients.html">
-                      By Ingredients</a
-                    ></label
+                    class="border font-medium border-green_border text-lg text-[#3f7545] px-3 bg-primary_green rounded-[15px] py-0.5 w-44 items-center flex"
+                    for="calories"
+                    >Calories</label
                   >
-                  <input type="radio" id="diet" name="skills" value="diet" />
-                  <label
-                    class="border font-medium border-gray_border text-lg text-gray_primary px-3 bg-white rounded-2xl py-0.5 w-44 items-center flex"
-                    for="diet"
-                    >By Diet</label
-                  >
-                  <input type="radio" id="cook" name="skills" value="cook" />
-                  <label
-                    class="border font-medium border-gray_border text-lg text-gray_primary px-3 bg-white rounded-2xl py-0.5 w-44 items-center flex"
-                    for="cook"
-                    >By Cook Time</label
-                  >
-                  <input type="radio" id="price" name="skills" value="price" />
-                  <label
-                    class="border font-medium border-gray_border text-lg text-gray_primary px-3 bg-white rounded-2xl py-0.5 w-44 items-center flex"
-                    for="price"
-                    >By Price</label
-                  >
-                  <input type="radio" id="type" name="skills" value="type" />
-                  <label
-                    class="border font-medium border-gray_border text-lg text-gray_primary px-3 bg-white rounded-2xl py-0.5 w-44 items-center flex"
-                    for="type"
-                    >By Type</label
-                  >
+                </div>
+                <div class="flex gap-x-2.5 mt-10">
+                  <input
+                    style="box-shadow: 0px 0px 0px 4px rgba(108, 111, 147, 0.1)"
+                    class="px-5 rounded-[50px] h-12 outline-none border border-[#b3b5cc]"
+                    type="text"
+                    placeholder="Min"
+                  />
+                  <input
+                    style="box-shadow: 0px 0px 0px 4px rgba(108, 111, 147, 0.1)"
+                    class="px-5 rounded-[50px] h-12 outline-none border border-[#b3b5cc]"
+                    type="text"
+                    placeholder="Max"
+                  />
+                </div>
+                <div class="mt-20">
+                  <img src="./images/tick.png" alt="" />
                 </div>
               </div>
             </div>
