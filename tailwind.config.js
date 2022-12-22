@@ -9,6 +9,8 @@ module.exports = {
                 input_width: "420px",
                 button_width: "202px",
                 box_gap: "337px",
+                menu_width:"190px",
+                menu_height:"64px"
             },
             colors: {
                 gray_dark: "#6C6F93",
