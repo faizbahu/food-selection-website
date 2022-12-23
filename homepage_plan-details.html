@@ -64,7 +64,7 @@
          <section class="flex flex-1 flex-col min-h-screen">
             <div class="flex mt-12">
                <a href="./homepage_planner.html">
-               <button
+               <button id="hover" onmouseover="hover_effect()" onmouseleave="hover_effect_leave()"
                   class="hover:rounded-t-3xl w-menu_width h-menu_height text-xl text-bold_text hover:font-bold hover:text-2xl hover:text-black hover:bg-vibrant_gray">
                Planner
                </button>
@@ -81,7 +81,7 @@
                </button>
                </a>
             </div>
-            <div class="bg-vibrant_gray flex flex-1 p-10 rounded-tl-3xl">
+            <div id="border_full" class="bg-vibrant_gray flex flex-1 p-10 rounded-tl-3xl">
                <form style="flex: 2;"  action="">
                   <div class="bg-white rounded-3xl min-h-screen">
                      <div class="pt-14 pl-14 pr-16  flex flex-col flex-wrap ">
@@ -210,4 +210,12 @@
       color: #3f7545;
       }
    </style>
+   <script>
+      function hover_effect(){
+          document.getElementById("border_full").classList.remove('rounded-tl-3xl')
+      }
+      function hover_effect_leave(){
+          document.getElementById("border_full").classList.add('rounded-tl-3xl');
+      }
+  </script>
 </html>

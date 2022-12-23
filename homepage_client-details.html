@@ -9,7 +9,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet"/>
     <link rel="stylesheet" href="style.css"/>
+    
     <link href="./css/tailwind.css" rel="stylesheet"/>
+    
     <title>Simple Ai Food</title>
 </head>
 
@@ -55,11 +57,11 @@
                 </div>
             </div>
         </header>
-        <section class="hovering">
+        <section>
             <section class=" flex flex-1 flex-col min-h-screen">
                 <div class="flex mt-12">
                     <a href="./homepage_planner.html">
-                        <button  class="hover:rounded-t-3xl w-menu_width h-menu_height text-xl text-bold_text hover:font-bold hover:text-2xl hover:text-black hover:bg-vibrant_gray">
+                        <button id="hover" onmouseover="hover_effect()" onmouseleave="hover_effect_leave()" class="hover:rounded-t-3xl w-menu_width h-menu_height text-xl text-bold_text hover:font-bold hover:text-2xl hover:text-black hover:bg-vibrant_gray">
                             Planner
                         </button>
                     </a>
@@ -74,7 +76,7 @@
                         </button>
                     </a>
                 </div>
-                <div class="b bg-vibrant_gray flex flex-1 p-10 rounded-tl-3xl">
+                <div id="border_full" class="bg-vibrant_gray flex flex-1 p-10 rounded-tl-3xl">
                     <div style="flex:2" class="bg-white rounded-3xl">
                         <div class=" mt-16 pl-14 pr-16 gap-x-10  flex flex-col flex-wrap h-[600px]">
                             <div>
@@ -162,5 +164,15 @@
             </section>
         </section>
 </body>
+<script>
+    function hover_effect(){
+        
+        document.getElementById("border_full").classList.remove('rounded-tl-3xl')
+    }
+    function hover_effect_leave(){
+        
+        document.getElementById("border_full").classList.add('rounded-tl-3xl');
+    }
+</script>
 
 </html>
